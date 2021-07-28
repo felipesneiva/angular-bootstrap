@@ -1,0 +1,28 @@
+<div class=pagina>
+  <div class="text-center">
+
+    <div class="form-signin">
+      <form>
+        <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Entrar</h1>
+
+        <div class="form-floating">
+          <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="form-control" id="usuarioNome" name="nome">
+          <label for="usuarioNome">Usuário</label>
+        </div>
+        <div class="form-floating">
+          <input [(ngModel)]="usuario.senha" id="senha" type="password" class="form-control" name="usuariosenha">
+          <label for="senha">Senha</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Lembrar
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" name="action" (click)="fazerLogin()">Efetuar login</button>
+        <p class="mt-5 mb-3 text-muted">© FSN - 2021</p>
+      </form>
+    </div>
+  </div>
+</div>
